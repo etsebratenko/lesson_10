@@ -1,0 +1,253 @@
+:root {
+  --color-black: #000000;
+  --color-primery: #34547A;
+  --color-bg-gray: #eeeff1;
+  --color-text: #727272;
+  --color-white:#ffffff;
+  --font-size: 16px;
+  --font-primary: 'Roboto', sans-serif;
+  --letter-spacing: 0.1em;
+  --container-maine: 1110px;
+  --line-height-lg: 1.625;
+  --gap: 20px;
+  --gap-sm: calc(var(--gap) /2);
+
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: var(--font-size);
+  font-weight: 400;
+  font-family: var(--font-primary);
+}
+
+.header {
+  padding: 70px 0 141px;
+  background-color: var(--color-bg-gray);
+  width: 100%;
+}
+
+.header-navbar {
+  margin-bottom: 138px;
+}
+
+.container {
+  max-width: var(--container-maine);
+  padding: 0 var(--gap);
+  margin: 0 auto;
+}
+
+.header-navbar__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 23px;
+  margin-left: calc(0 - var(--gap-sm));
+}
+
+.header-navbar__link {
+  letter-spacing: var(--letter-spacing);
+  color: var(--color-black);
+  padding: var(--gap-sm);
+  display: block;
+}
+
+.header-navbar__link--active {
+  font-weight: 500;
+  color: var(--color-primery);
+}
+
+.header-content {
+  max-width: 540px;
+}
+
+.header-content__title {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: var(--line-height-lg);
+  color: var(--color-black);
+  margin: 0 0 35px;
+}
+
+.header-content__description {
+  color: var(--color-text);
+  margin-bottom: 56px;
+  line-height: var(--line-height-lg);
+}
+
+.header-content__link {
+  width: 225px;
+  height: 65px;
+  background-color: var(--color-primery);
+  font-weight: 400;
+  line-height: var(--line-height-lg);
+  letter-spacing: var(--letter-spacing);
+  color: var(--color-white);
+  padding: 0.5em 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+/* Maine + обо мне */
+.main {
+  width: 100%;
+  background-color: var(--color-white);
+}
+
+.container__about{
+  margin: auto;
+  text-align: center;
+  max-width: 540px;
+  line-height: var(--line-height-lg);
+  color: var(--color-text);
+}
+
+.about__title {
+  color: var(--color-black);
+  font-size: 32px;
+  padding-top: 112px;
+}
+
+.about__description {
+  font-size: var(--font-size);
+  line-height: var(--line-height-lg);
+  color: var(--color-text);
+  margin-top: 50px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+
+
+/* Мой опыт работы */
+.exspirience {
+  width: 100%;
+  background-color: var(--color-primery);
+  padding: 100px 0;
+}
+
+.container__exspirience {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.visually-hidden {
+  /* скрытый заголовок h2 */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.expirience-item {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.expirience-item__description {
+  gap: 10px;
+}
+
+.expirience-item__title {
+  font-size: 21px;
+  color: var(--color-white);
+  line-height: var(--line-height-lg);
+}
+
+.expirience-item__text {
+  font-size: var(--font-size);
+  color: var(--color-white);
+  line-height: var(--line-height-lg);
+  
+}
+
+.expirience-item__img {
+  width: 47px;
+  height: 50px;  
+}
+
+
+/* Как я работаю + видео */
+.job {
+  width: 100%;
+  background-color: var(--color-white);
+}
+
+.container__job{
+  margin: auto;
+  text-align: center;
+  max-width: 540px;
+  line-height: var(--line-height-lg);
+  color: var(--color-text);
+}
+
+.job__title {
+  color: var(--color-black);
+  font-size: 32px;
+  padding-top: 100px;
+}
+
+.job__description {
+  font-size: var(--font-size);
+  line-height: var(--line-height-lg);
+  color: var(--color-text);
+  margin-top: 50px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+iframe {
+  border: 0;
+}
+.video {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  background-color: var(--color-primery);
+}
+
+.footer-info {
+  padding: 50px 0;
+  gap: 20px;
+  margin: auto;
+  max-width: var(--container-maine);
+}
+
+.info__name {
+  color: var(--color-white);
+  font-size: 21px;
+  line-height: var(--line-height-lg);
+}
+
+.info__copirate {
+  color: var(--color-white);
+  font-size: 13px;
+  line-height: var(--line-height-lg);
+}

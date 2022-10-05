@@ -30,6 +30,21 @@ html {
   font-family: var(--font-primary);
 }
 
+.visually-hidden {
+  /* скрытый заголовок h2 */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
 .header {
   padding: 70px 0 141px;
   background-color: var(--color-bg-gray);
@@ -106,20 +121,20 @@ html {
   background-color: var(--color-white);
 }
 
-.container__about{
+.about {
   margin: auto;
   text-align: center;
+}
+.about__container {
   max-width: 540px;
-  line-height: var(--line-height-lg);
-  color: var(--color-text);
 }
 
 .about__title {
   color: var(--color-black);
   font-size: 32px;
   padding-top: 112px;
-}
 
+}
 .about__description {
   font-size: var(--font-size);
   line-height: var(--line-height-lg);
@@ -127,66 +142,44 @@ html {
   margin-top: 50px;
   text-align: center;
   margin-bottom: 100px;
+
 }
-
-
 
 /* Мой опыт работы */
 .exspirience {
-  width: 100%;
   background-color: var(--color-primery);
+  color: var(--color-white);
   padding: 100px 0;
+
 }
 
-.container__exspirience {
+.exspirience__container {
   display: flex;
-  justify-content: center;
-  gap: 50px;
-  flex-wrap: wrap;
-}
-
-.visually-hidden {
-  /* скрытый заголовок h2 */
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+  justify-content: space-between;
 }
 
 .expirience-item {
   display: flex;
-  gap: 20px;
-  align-items: center;
   flex-direction: row-reverse;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
-
-.expirience-item__description {
-  gap: 10px;
-}
-
 .expirience-item__title {
+  gap: 10px;
   font-size: 21px;
-  color: var(--color-white);
   line-height: var(--line-height-lg);
 }
 
 .expirience-item__text {
   font-size: var(--font-size);
-  color: var(--color-white);
   line-height: var(--line-height-lg);
-  
 }
 
 .expirience-item__img {
   width: 47px;
   height: 50px;  
-}
+} 
 
 
 /* Как я работаю + видео */
@@ -195,7 +188,7 @@ html {
   background-color: var(--color-white);
 }
 
-.container__job{
+.job__container{
   margin: auto;
   text-align: center;
   max-width: 540px;
@@ -223,6 +216,7 @@ iframe {
 }
 .video {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 100px;
 }
@@ -233,7 +227,7 @@ iframe {
   background-color: var(--color-primery);
 }
 
-.footer-info {
+.footer__container {
   padding: 50px 0;
   gap: 20px;
   margin: auto;

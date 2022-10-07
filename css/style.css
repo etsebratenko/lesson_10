@@ -11,7 +11,9 @@
   --line-height-lg: 1.625;
   --gap: 20px;
   --gap-sm: calc(var(--gap) /2);
-  --font-weight: 500;
+  --font-weight-bg: 500;
+  --font-weight-sm: 400;
+
 
 }
 
@@ -87,7 +89,7 @@ html {
 }
 
 .header-content__title {
-  font-weight: var(--font-weight);
+  font-weight: var(--font-weight-bg);
   font-size: 48px;
   line-height: var(--line-height-lg);
   color: var(--color-black);
@@ -95,6 +97,7 @@ html {
 }
 
 .header-content__description {
+  font-weight: var(--font-weight-sm);
   color: var(--color-text);
   margin-bottom: 56px;
   line-height: var(--line-height-lg);
@@ -132,13 +135,14 @@ html {
 }
 
 .about__title {
+  font-weight: var(--font-weight-bg);
   color: var(--color-black);
   font-size: 32px;
   margin-bottom: 50px;
-  font-weight: var(--font-weight);
 }
 
 .about__description {
+  font-weight: var(--font-weight-sm);
   font-size: var(--font-size);
   line-height: var(--line-height-lg);
   color: var(--color-text);
@@ -201,13 +205,14 @@ html {
 }
 
 .job__title {
-  font-weight: var(--font-weight);
+  font-weight: var(--font-weight-bg);
   color: var(--color-black);
   font-size: 32px;
   margin-bottom: 50px;
 }
 
 .job__description {
+  font-weight: var(--font-weight-sm);
   font-size: var(--font-size);
   line-height: var(--line-height-lg);
   color: var(--color-text);
@@ -228,6 +233,7 @@ iframe {
 
 /* Footer */
 .footer {
+
   background-color: var(--color-primery);
   color: var(--color-white);
   padding: 50px 0;
@@ -235,11 +241,13 @@ iframe {
 
 
 .footer__name {
+  font-weight: var(--font-weight-bg);
   font-size: 21px;
   line-height: var(--line-height-lg);
 }
 
 .footer__copirate {
+  font-weight: var(--font-weight-sm);
   font-size: 13px;
   line-height: var(--line-height-lg);
 }
